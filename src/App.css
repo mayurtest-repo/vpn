@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(69, 69, 69);
+  padding: 0 10rem;
+  width: 100%;
+  height: 100vh;
+
+}
+.btn {
+  color: azure;
+  background-color: rgb(211, 21, 100);
+  width: 8rem;
+  height: 3rem;
+  border-radius: 4rem;
+  box-sizing: border-box;
+  border-style: none;
+  font-weight: 500;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid grey;
+  color: rgb(44, 44, 44);
+  transform: translateY(4px);
+  transition: 0.3s;
+}
+span {
+  color: rgb(211, 21, 100);
+  font-weight: 700;
+}
+/* navbar */
+
+.sticky {
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+}
+.navbar-brand {
+  font-weight: 500;
+  font-size: 1.9rem;
+  padding: 0 8rem;
+}
+.btn-nav {
+  margin-left: 20rem;
+}
+#navbarNav {
+  margin: 0 8rem;
+}
+.navbar {
+  transition: 5s;
+  background-color: aliceblue;
+}
+.nav-link:hover {
+  color: rgb(211, 21, 100);
+}
+
+/* Home section */
+#Home {
+  position: relative;
+  bottom: 4rem;
+}
+
+.bg-2 {
+  width: 40rem;
+  height: 30rem;
+  position: relative;
+  left: 11rem;
+}
+.bg-1{
+  position: absolute;
+  top: 15rem;
+  right: 12rem;
+}
+.abt-h {
+  font-weight: 700;
+  color: rgb(211, 21, 100);
+}
+.ab-img {
+  width: 28rem;
+  height: 28rem;
+}
+.abt-te {
+  padding-left: 4rem;
+}
+
+.cnt {
+  margin-top: 1rem;
+}
+i {
+  font-size: 1.3rem;
+  padding: 0.3rem;
+}
+/* service section */
+.services {
+  display: flow-root;
+ 
+
+}
+.service-h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-te {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+.s-img {
+  width: 15rem;
+  height: 10rem;
+}
+
+.serv-card {
+  width: 20rem;
+  height: 30rem;
+  padding: 2rem;
+  margin: 6rem;
+  text-align: center;
+}
+/* contact */
+.contact{
+margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 0;
+}
+.contact-form{
+  position: relative;
+  left: 650px;
+  bottom: 360px;
+}
+.contact-form form input,form textarea{
+  width: 100%;
+  padding: 14px;
+
+ 
+  border: none;
+  box-shadow: 2px 2px 8px rgb(71, 71, 71);
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.contact-form textarea{
+  resize: none;
+  height: 240px;
+}
+.contact-form .button{
+  display: inline-block;
+  font-size: 16px;
+ background-color:rgb(211, 21, 100) ;
+ color: #fff;
+ font-weight: 500;
+  width: 160px;
+  transition: all 45s ease;
+  cursor: pointer;
+  
+}
+.contact-form input:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contact-text h4{
+  line-height: 1;
+}
+.contact-text p{
+
+  font-size: var(--p-font);
+  line-height: 1.8;
+  margin: 30px 30px 30px 0;
+}
+.list {
+  margin-bottom: 2.8rem;
+}
+.ab-link{
+  text-decoration: none;
+  color: #363636;
+}
+.c-link {
+  color: rgb(211, 21, 100);
+  text-decoration: none;
+}
+ul{
+  padding-left: 0;
+}
+.list li {
+  margin-bottom: 12px;
+list-style: none;
+margin-right: 4rem;
+}
+.end{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* responsive for devices less than 6oopx */
+@media only screen and (max-width: 600px) {
+  .container{
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+padding: 0 1rem;  
+overflow: hidden;
+font-size:1rem;
+text-align: center;
+  }
+  .container-fluid{
+    margin-top: 5rem;
+  }
+  .btn-nav{
+    margin-left: -2rem;
+  }
+  .navbar-brand{
+    font-size: 1.5rem;
+    position:absolute;
+    left: 14rem;
+    top: 2rem;
+    padding: 0;
+  }
+  .navbar-toggler {
+    position: absolute;
+    top: 2rem;
+  }
+  .bg-1, .bg-2{
+    display: none;
+  }
+.abt{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .ab-img{
+    width: 15rem;
+    height: 15rem;
+  }
+  .abt-te{
+    padding-left: 1rem;
+    text-align: center;
+  }
+  .ht-p{
+    font-size: 1.3rem;
+  }
+  .abt-h{
+    text-align: center;
+    padding: 0.3rem;
+  }
+  .service-te{
+    flex-direction: column;
+  }
+  .serv-card{
+    width: 20rem;
+    margin: 0;
+    height: 22rem;
+  }
+  .services{
+    height: 178vh;
+    margin-bottom: 4rem;
+  }
+  .contact{
+    margin-top: 2rem;
+    text-align: center;
+    
+  }
+  .mycontact{
+    height: 178vh;
+    position: relative;
+    left: 0rem;
+    padding: 0 11rem;
+    text-align: left;
+  }
+  .contact-form{
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  #Services{
+    margin-top: 4rem;
+  }
+
+}
+/* reponsive for devices such as tablets */
+@media only screen and (min-width: 601px) and (max-width: 958px) {
+  .container {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .navbar{
+    margin: 0 0;
+    width: 100%;
+  }
+  .navbar-brand{
+    padding: 0 0;
+  }
+  .navbar-nav{
+    text-align: center;
+  }
+  .bg-2{
+    display: none;
+  }
+  .bg-1{
+    position: absolute;
+    top: 12rem;
+    right: -2rem;
+  }
+  .Home-text{
+    width: 100%;
+    position: absolute;
+    right: -2rem;
+    top: 12rem;
+}
+.abt{
+  display: flex;
+  flex-direction: column;
+}
+.ab-img {
+  width: 17rem;
+  height: 17rem;
+  margin-bottom: 4rem;
+ 
+  }
+.service-te{
+  display: flex;
+  flex-direction: column;
+}
+.serv-card{
+  height: 13rem;
+  margin: 4rem;
+}
+.mycontact{
+  overflow: visible;
+}
+  
+.contact-text{
+  position: relative;
+  left: -3rem;
+}
+.contact-form {
+    position: relative;
+    left: 324px;
+    bottom: 360px;
+}
+}
